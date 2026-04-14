@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Íntima — áudio erótico feminino. Narrativas que tocam emoção e desejo ao mesmo tempo.">
+  <meta property="og:title" content="Íntima — áudio erótico feminino">
+  <meta property="og:description" content="Uma biblioteca de áudios eróticos criados especialmente para o prazer feminino.">
+  <meta property="og:type" content="website">
+  <title>Íntima — áudio erótico feminino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">íntim<span>a</span></div>
+    <nav class="nav">
+      <a href="#linhas">linhas</a>
+      <a href="#planos">planos</a>
+      <a href="#planos" class="nav-cta">assinar</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#linhas" onclick="closeMobileMenu()">linhas</a>
+    <a href="#planos" onclick="closeMobileMenu()">planos</a>
+    <a href="#planos" class="mobile-cta" onclick="closeMobileMenu()">assinar agora</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">áudio erótico feminino · para mulheres, por mulheres</p>
+      <h1>histórias que<br><em>você sente</em><br>de verdade</h1>
+      <p class="hero-sub">Uma biblioteca de áudios eróticos criados especialmente para o prazer feminino. Narrativas que tocam emoção e desejo ao mesmo tempo.</p>
+      <div class="hero-btns">
+        <a href="#linhas" class="btn-primary">explorar linhas</a>
+        <a href="#planos" class="btn-ghost">ver planos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-n">5</span>
+          <span class="stat-l">linhas</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-n">+40</span>
+          <span class="stat-l">minutos</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-n">100%</span>
+          <span class="stat-l">feminino</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-deco">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+      <div class="deco-line l1"></div>
+      <div class="deco-line l2"></div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- LINHAS -->
+  <section class="linhas" id="linhas">
+    <div class="section-header">
+      <p class="section-tag">biblioteca</p>
+      <h2>escolha sua linha</h2>
+      <p class="section-sub">cinco experiências, cinco universos</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card active" data-title="Depois de Tanto Tempo" data-linha="Linha Intenso" data-desc="Passional e emotivo — reencontros, amor proibido, tensão que explode." data-duracao="8:42" data-premium="false" onclick="selectCard(this)">
+        <div class="card-top">
+          <span class="card-emoji">💜</span>
+          <span class="card-badge free">grátis</span>
+        </div>
+        <h3>Intenso</h3>
+        <p>Passional e emotivo. Reencontros, amor proibido, tensão que explode num só momento.</p>
+        <div class="card-footer">
+          <span class="card-dur">8:42</span>
+          <span class="card-play-hint">▶ ouvir prévia</span>
+        </div>
+      </div>
+
+      <div class="card" data-title="Sob Suas Ordens" data-linha="Linha Poder" data-desc="BDSM suave — dinâmica de poder, dominação e entrega total." data-duracao="9:15" data-premium="true" onclick="selectCard(this)">
+        <div class="card-top">
+          <span class="card-emoji">🖤</span>
+          <span class="card-badge premium">premium</span>
+        </div>
+        <h3>Poder</h3>
+        <p>BDSM suave. Dinâmica de poder, dominação e entrega total.</p>
+        <div class="card-footer">
+          <span class="card-dur">9:15</span>
+          <span class="card-play-hint">🔒 premium</span>
+        </div>
+      </div>
+
+      <div class="card" data-title="O Que Ficou Guardado" data-linha="Linha Sem Filtro" data-desc="Explícito e sofisticado — desejo sem desculpas, linguagem adulta." data-duracao="8:58" data-premium="true" onclick="selectCard(this)">
+        <div class="card-top">
+          <span class="card-emoji">🔥</span>
+          <span class="card-badge premium">premium</span>
+        </div>
+        <h3>Sem Filtro</h3>
+        <p>Explícito e sofisticado. Desejo sem desculpas, linguagem adulta.</p>
+        <div class="card-footer">
+          <span class="card-dur">8:58</span>
+          <span class="card-play-hint">🔒 premium</span>
+        </div>
+      </div>
+
+      <div class="card" data-title="Só Nós Dois" data-linha="Linha ASMR Íntimo" data-desc="Sussurrado e sensorial — presença, toque, calma absoluta." data-duracao="10:02" data-premium="true" onclick="selectCard(this)">
+        <div class="card-top">
+          <span class="card-emoji">🌙</span>
+          <span class="card-badge premium">premium</span>
+        </div>
+        <h3>ASMR Íntimo</h3>
+        <p>Sussurrado e sensorial. Presença, toque, calma absoluta.</p>
+        <div class="card-footer">
+          <span class="card-dur">10:02</span>
+          <span class="card-play-hint">🔒 premium</span>
+        </div>
+      </div>
+
+      <div class="card" data-title="A Melhor Fase" data-linha="Linha Diverso +40" data-desc="Para mulheres que sabem o que querem — maturidade e intensidade." data-duracao="9:33" data-premium="true" onclick="selectCard(this)">
+        <div class="card-top">
+          <span class="card-emoji">🌈</span>
+          <span class="card-badge premium">premium</span>
+        </div>
+        <h3>Diverso +40</h3>
+        <p>Para mulheres que sabem o que querem. Maturidade e intensidade.</p>
+        <div class="card-footer">
+          <span class="card-dur">9:33</span>
+          <span class="card-play-hint">🔒 premium</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PLAYER -->
+  <section class="player-section">
+    <div class="player-wrap">
+      <div class="player-header">
+        <div class="player-info">
+          <p class="player-linha" id="player-linha">Linha Intenso</p>
+          <h3 class="player-title" id="player-title">Depois de Tanto Tempo</h3>
+          <p class="player-desc" id="player-desc">Passional e emotivo — reencontros, amor proibido, tensão que explode.</p>
+        </div>
+        <div class="player-lock" id="player-lock" style="display:none">
+          <div class="lock-box">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+              <rect x="1" y="7" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 7V5a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span>premium</span>
+        </div>
+      </div>
+
+      <div class="preview-label" id="preview-label">
+        <span>— prévia gratuita · 2 minutos —</span>
+      </div>
+      <div class="premium-label" id="premium-label" style="display:none">
+        <span>— conteúdo premium —</span>
+      </div>
+
+      <!-- WAVEFORM -->
+      <div class="waveform" id="waveform" onclick="togglePlay()">
+        <div class="waveform-inner" id="waveform-bars"></div>
+        <div class="waveform-cursor" id="waveform-cursor"></div>
+      </div>
+
+      <!-- PROGRESS -->
+      <div class="progress-row">
+        <span class="time" id="time-cur">0:00</span>
+        <div class="progress-track" id="progress-track" onclick="seekTrack(event)">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-thumb" id="progress-thumb"></div>
+        </div>
+        <span class="time" id="time-tot">2:00</span>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="controls">
+        <button class="ctrl-btn" onclick="skipBack()" title="voltar 10s">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 17l-5-5 5-5"/><path d="M18 17l-5-5 5-5"/>
+          </svg>
+          <span>10s</span>
+        </button>
+
+        <button class="play-btn" id="play-btn" onclick="togglePlay()" aria-label="play/pause">
+          <svg class="icon-play" id="icon-play" width="22" height="22" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <svg class="icon-pause" id="icon-pause" width="22" height="22" viewBox="0 0 24 24" fill="white" style="display:none">
+            <path d="M6 4h4v16H6zM14 4h4v16h-4z"/>
+          </svg>
+        </button>
+
+        <button class="ctrl-btn" onclick="skipFwd()" title="avançar 10s">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M13 17l5-5-5-5"/><path d="M6 17l5-5-5-5"/>
+          </svg>
+          <span>10s</span>
+        </button>
+      </div>
+
+      <!-- SPEED & VOLUME -->
+      <div class="player-extras">
+        <button class="extra-btn" id="speed-btn" onclick="cycleSpeed()">velocidade: <strong id="speed-label">1×</strong></button>
+        <div class="volume-row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <path d="M15.54 8.46a5 5 0 010 7.07"/>
+          </svg>
+          <input type="range" id="volume-slider" min="0" max="100" value="80" oninput="setVolume(this.value)">
+        </div>
+      </div>
+
+      <!-- CTA PLAYER -->
+      <div class="player-cta" id="player-cta">
+        <p>acesso completo a todos os áudios</p>
+        <div class="price-row">
+          <div class="price-item">
+            <div class="price-val">R$ 19,90</div>
+            <div class="price-lbl">por mês</div>
+          </div>
+          <div class="price-sep"></div>
+          <div class="price-item">
+            <div class="price-val">R$ 79</div>
+            <div class="price-lbl">pack completo</div>
+          </div>
+          <div class="price-sep"></div>
+          <div class="price-item">
+            <div class="price-val">R$ 150</div>
+            <div class="price-lbl">personalizado</div>
+          </div>
+        </div>
+        <a href="#planos" class="btn-primary" style="display:block;text-align:center;text-decoration:none;max-width:320px;margin:0 auto">quero acesso completo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="section-divider"></div>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="section-header">
+      <p class="section-tag">quem já ouviu</p>
+      <h2>o que elas dizem</h2>
+    </div>
+    <div class="depoi-grid">
+      <div class="depoi-card">
+        <p>"Finalmente um áudio feito pra mim. Não pra ele, pra mim."</p>
+        <span>— Ana P., São Paulo</span>
+      </div>
+      <div class="depoi-card">
+        <p>"Ouvi o ASMR com fone às 23h. Dormi melhor do que em anos."</p>
+        <span>— Carla M., Rio de Janeiro</span>
+      </div>
+      <div class="depoi-card">
+        <p>"Com 44 anos nunca pensei que ia me sentir assim. A linha +40 é incrível."</p>
+        <span>— Renata S., Curitiba</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="planos" id="planos">
+    <div class="section-header">
+      <p class="section-tag">acesso</p>
+      <h2>planos</h2>
+      <p class="section-sub">escolha como quer explorar</p>
+    </div>
+    <div class="planos-grid">
+
+      <div class="plano">
+        <div class="plano-tag">grátis</div>
+        <h3>Explorar</h3>
+        <div class="plano-preco">R$ 0<span>/mês</span></div>
+        <ul class="plano-itens">
+          <li>2 prévias por mês</li>
+          <li>Linha Intenso</li>
+          <li>Qualidade padrão</li>
+        </ul>
+        <!-- SUBSTITUA O HREF PELO LINK DA SUA PLATAFORMA -->
+        <a href="LINK_HOTMART_OU_PRIVACY_AQUI" class="btn-plano" target="_blank">começar grátis</a>
+      </div>
+
+      <div class="plano destaque">
+        <div class="plano-tag destaque-tag">mais popular</div>
+        <h3>Assinante</h3>
+        <div class="plano-preco">R$ 19,90<span>/mês</span></div>
+        <ul class="plano-itens">
+          <li>Acesso às 5 linhas</li>
+          <li>Novos áudios mensais</li>
+          <li>Alta qualidade</li>
+          <li>Modo sleep</li>
+          <li>Cancele quando quiser</li>
+        </ul>
+        <!-- SUBSTITUA O HREF PELO LINK DA SUA PLATAFORMA -->
+        <a href="LINK_HOTMART_OU_PRIVACY_AQUI" class="btn-plano destaque-btn" target="_blank">assinar agora</a>
+      </div>
+
+      <div class="plano">
+        <div class="plano-tag">único</div>
+        <h3>Pack Completo</h3>
+        <div class="plano-preco">R$ 79<span> único</span></div>
+        <ul class="plano-itens">
+          <li>5 áudios completos</li>
+          <li>Download liberado</li>
+          <li>Acesso vitalício</li>
+        </ul>
+        <!-- SUBSTITUA O HREF PELO LINK DA SUA PLATAFORMA -->
+        <a href="LINK_HOTMART_OU_PRIVACY_AQUI" class="btn-plano" target="_blank">comprar pack</a>
+      </div>
+
+      <div class="plano">
+        <div class="plano-tag">exclusivo</div>
+        <h3>Personalizado</h3>
+        <div class="plano-preco">R$ 150<span> único</span></div>
+        <ul class="plano-itens">
+          <li>Roteiro sob medida</li>
+          <li>Seu nome no áudio</li>
+          <li>Entrega em 48h</li>
+          <li>Tema à sua escolha</li>
+        </ul>
+        <!-- SUBSTITUA PELO SEU WHATSAPP OU EMAIL -->
+        <a href="https://wa.me/SEU_NUMERO_AQUI?text=Quero%20um%20%C3%A1udio%20personalizado" class="btn-plano" target="_blank">solicitar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="section-header">
+      <p class="section-tag">dúvidas</p>
+      <h2>perguntas frequentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>É seguro e anônimo?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Sim. Toda a compra é discreta — não aparece nenhuma descrição comprometedora na fatura. Seus dados são protegidos e nunca compartilhados.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>Como acesso os áudios após a compra?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Imediatamente após o pagamento você recebe o link de acesso por e-mail. Pode ouvir pelo navegador ou fazer download direto no seu celular.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>O que é o áudio personalizado?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Você nos conta sua fantasia ou situação desejada, e criamos um áudio exclusivo com seu nome, seu roteiro e o tom que você escolher. Entregamos em até 48h.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>Posso cancelar a assinatura quando quiser?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Sim, sem burocracia. Você cancela com um clique e não é cobrada no mês seguinte. Sem perguntas, sem julgamento.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>Os áudios têm narração humana?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Os áudios são produzidos com tecnologia de voz IA de alta fidelidade, com trilha de fundo e pós-produção profissional. O resultado é imersivo e natural.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo footer-logo">íntim<span>a</span></div>
+      <p class="footer-tagline">para mulheres, por mulheres</p>
+      <div class="footer-links">
+        <!-- SUBSTITUA PELOS SEUS LINKS -->
+        <a href="#">privacidade</a>
+        <a href="#">termos</a>
+        <a href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">contato</a>
+      </div>
+      <p class="footer-copy">© 2025 Íntima · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
