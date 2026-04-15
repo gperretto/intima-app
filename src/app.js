@@ -18,11 +18,11 @@ const SPEEDS = [0.75, 1, 1.25, 1.5];
 // Quando tiver os arquivos de áudio reais, coloque-os em /public/audio/
 // e atualize os caminhos abaixo.
 const TRACKS = {
-  intenso:  { src: 'public/audio/intenso_preview.mp3',   dur: 522 },  // 8:42
-  poder:    { src: 'public/audio/poder_preview.mp3',      dur: 555 },  // 9:15
-  semfiltro:{ src: 'public/audio/semfiltro_preview.mp3',  dur: 538 },  // 8:58
-  asmr:     { src: 'public/audio/asmr_preview.mp3',       dur: 602 },  // 10:02
-  diverso:  { src: 'public/audio/diverso_preview.mp3',    dur: 573 },  // 9:33
+  intenso:  { src: 'https://res.cloudinary.com/dgyqkpsby/video/upload/v1776252019/intenso_preview_ezenoq.mp3',   dur: 522 },  // 8:42
+  poder:    { src: 'https://res.cloudinary.com/dgyqkpsby/video/upload/v1776252019/poder_preview_cmrboe.mp3',      dur: 555 },  // 9:15
+  semfiltro:{ src: 'https://res.cloudinary.com/dgyqkpsby/video/upload/v1776252020/semfiltro_preview_m3epht.mp3',  dur: 538 },  // 8:58
+  asmr:     { src: 'https://res.cloudinary.com/dgyqkpsby/video/upload/v1776252017/asmr_preview_lmjuhw.mp3',       dur: 602 },  // 10:02
+  diverso:  { src: 'https://res.cloudinary.com/dgyqkpsby/video/upload/v1776252019/diverso_preview_ncslym.mp3',    dur: 573 },  // 9:33
 };
 
 let audioEl = null;  // HTMLAudioElement quando áudio real estiver disponível
